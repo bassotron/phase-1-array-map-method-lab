@@ -14,13 +14,13 @@ const tutorials = [
 
 function titleCased(array) { 
   
-  const newArray = array.map((sentence) => {
+  const newArray = tutorials.map((sentence) => {
     
     const wordArr = sentence.split(" ");
     console.log(wordArr)
     return  wordArr.map(word => { 
-      if (word === word.charAt().toLowerCase() && word.charAt() === word.toLowerCase()) {
-        return word.charAt().toUpperCase() + word.slice(1).toLowerCase()
+      if (word === word.charAt(0).toLowerCase() && word.charAt(0) === word.toLowerCase()) {
+        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
       } 
       else {
         
